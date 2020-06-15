@@ -1,0 +1,60 @@
+.home-bg {
+  background-color: #9fbe3c;
+}
+
+.header {
+  height: 50px;
+    background: #cddc39;
+}
+
+.menu {
+  margin: 0px 10px;
+  padding: 0
+}
+
+.menu li {
+  float: left;
+  list-style-type: none
+}
+
+.menu li a {
+  padding: 7px 6px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #00adff;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  color: #000
+}
+
+.menu li:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background: #999
+}
+
+.menu li:last-child::after {
+  display: none
+}
+
+.parent-padding {
+  padding: 0 100px;
+}
+
+mat-card {
+  border-radius: 15px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .parent-padding {
+    padding: 0 0;
+  }
+}
