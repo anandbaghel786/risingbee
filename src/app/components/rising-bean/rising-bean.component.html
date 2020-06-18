@@ -1,6 +1,8 @@
-<div fxLayout="column" class="home-bg">
-  <div fxLayout="row" class="header"></div>
-  <div fxLayout="column" fxLayoutAlign="center center" style="padding-top: 2rem !important
+<div fxLayout="column">
+  <div fxLayout="row" class="header" fxLayoutAlign="end center">
+    <button mat-raised-button color="primary" (click)="goToLayoutExample();">Go to Flex Layout Example</button>
+  </div>
+  <div class="home-bg" fxLayout="column" fxLayoutAlign="center center" style="padding-top: 2rem !important
   ; text-align: center;">
     <span class="tang-font" style="font-size: 3rem;font-weight: bold;">Access Grades</span>
     <span style="color: white;margin-top: 0.5rem;">click on each level below to view a complete list of activities.</span>
@@ -12,6 +14,9 @@
   <div fxLayout="row" fxLayout.xs="column" class="parent-padding">
     <div fxLayout="row" fxLayout.xs="column" fxFlex="55" style="margin:10px; padding: 7px; border: 1px solid #9fd89f; border-style: dashed; border-radius: 15px;">
       <mat-card>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Login</button>
+        </mat-card-actions>
         <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" style="padding: 11px 7px 11px 44px;">
           <div fxLayout="column" fxFlex="30%" class="card-image">
             <img src="../../../assets/images/pngwave.png" width="120px" height="180px" alt="">

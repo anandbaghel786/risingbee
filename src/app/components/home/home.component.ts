@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
 
   public myform: FormGroup;
   hobbies: FormArray;
+  public title: String = "Rising Bee";
 
   constructor(private fb: FormBuilder) {
     this.myform = this.fb.group({

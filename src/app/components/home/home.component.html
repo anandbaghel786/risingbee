@@ -1,39 +1,4 @@
-<div class="container-fluid">
-  <div class="row">
-    <!-- <div class="col-md-12">
-            <span *ngFor=""></span>
-        </div> -->
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <form [formGroup]="myform">
-        <div class="form-group">
-          <label for="name">Name
-            <span class="text-danger">*</span>
-          </label>
-          <input type="text" class="form-control" formControlName="name" required [ngClass]="{ 'is-invalid': f.name.touched && f.name.errors }">
-          <div *ngIf="f.name.touched && f.name.errors" class="invalid-feedback">
-            <div *ngIf="f.name.errors.required">Name is required</div>
-          </div>
-        </div>
-        <div formArrayName="hobbies" *ngFor="let item of myform.get('hobbies'); let i =  index;">
-          <div [formGroupName]="i">
-            <div class="row">
-              <div class="col-md-6">
-                <label for="">ID</label>
-                <input type="text" class="form-control" formControlName="id">
-              </div>
-              <div class="col-md-6">
-                <label for="">Name</label>
-                <input type="text" class="form-control" formControlName="name">
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  <button class="btn btn-info" (click)="getNewItem();">Click Here: </button>
-  <button class="btn btn-info" (click)="removeItem();">Remove Item: </button>
-
+<div class="containerX">
+  <h1>Welcome to {{title}}</h1>
+  <app-div></app-div>
 </div>

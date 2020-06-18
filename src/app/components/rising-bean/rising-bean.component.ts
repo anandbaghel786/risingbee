@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rising-bean',
@@ -9,7 +10,7 @@ import { Subscription } from 'rxjs';
 })
 export class RisingBeanComponent implements OnInit {
   private mediaSub: Subscription;
-  constructor(private cdRef: ChangeDetectorRef, private mediaObserver: MediaObserver) { }
+  constructor(private cdRef: ChangeDetectorRef, private mediaObserver: MediaObserver, private router: Router) { }
 
   ngOnInit() {
 
@@ -19,6 +20,10 @@ export class RisingBeanComponent implements OnInit {
         console.log(change);
       }
     )
+  }
+
+  public goToLayoutExample() {
+    this.router.navigate(['divcomp'])
   }
 
 }

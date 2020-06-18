@@ -1,5 +1,8 @@
 .home-bg {
   background-color: #9fbe3c;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .header {
